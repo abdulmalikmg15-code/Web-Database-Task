@@ -1,4 +1,7 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 include "db.php";
 
 $result = $conn->query("SELECT id, name, age, status FROM users ORDER BY id DESC");
